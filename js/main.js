@@ -5,7 +5,7 @@ let weatherInfo = document.getElementById('weather-info');
 function getWeatherData(latitude, longitude) {
 
     const apiKey = 'c9fe74109ea93f911dfec2ced560e689';
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
 
     fetch(url)
