@@ -7,15 +7,12 @@
 </head>
 <body>
 <div class="weather-app">
-    <h1>Приложение погоды</h1>
     <form id="weather-form" class="weather-form">
-        <label for="latitude">Широта:</label>
-        <input type="text" id="latitude" required>
-        <label for="longitude">Долгота:</label>
-        <input type="text" id="longitude" required>
+        <input type="text" id="latitude" required placeholder="Широта:">
+        <input type="text" id="longitude" required placeholder="Долгота:">
         <button type="submit">Узнать погоду</button>
     </form>
-    <div id="weather-info"></div>
+    <div id="weather-info" class="weather-info"></div>
 </div>
 
 <script src="/js/main.js"></script>

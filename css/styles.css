@@ -1,7 +1,22 @@
+.weather-app {
+    background-image: url("https://celes.club/uploads/posts/2022-11/1667399948_3-celes-club-p-narisovannii-gorod-fon-pinterest-3.jpg");
+
+    width: 300px;
+    padding: 20px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .weather-form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+}
+
+.weather-info {
+    color: black;
+    font-weight: bold;
+    font-size: 23px;
 }
 
 input {

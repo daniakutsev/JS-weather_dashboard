@@ -19,7 +19,6 @@ function getWeatherData(latitude, longitude) {
             const country = data.sys.country
 
             const weatherHTML = `
-                <h2>Информация о погоде:</h2>
                 <p>Температура: ${temperature}°C</p>
                 <p>Влажность: ${humidity}%</p>
                 <p>Скорость ветра: ${windSpeed} м/с</p>
@@ -37,7 +36,6 @@ function getWeatherData(latitude, longitude) {
                 timestamp: Date.now()
             };
             localStorage.setItem(`weather_${latitude}_${longitude}`, JSON.stringify(cacheData));
-
 
         })
 
@@ -75,8 +73,7 @@ form.addEventListener('submit', event => {
                 const cityName = parsedData.cityName;
                 const country = parsedData.country
 
-                const weatherHTML = `
-                    <h2>Информация о погоде:</h2>
+                const weatherHTML = `                    
                     <p>Температура: ${temperature}°C</p>
                     <p>Влажность: ${humidity}%</p>
                     <p>Скорость ветра: ${windSpeed} м/с</p>
