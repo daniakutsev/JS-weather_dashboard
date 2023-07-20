@@ -1,0 +1,24 @@
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background: darkgrey;
+}
+
+button:hover {
+    transform: scale(1.03);
+    transition: .15s ease-in-out;
+}
